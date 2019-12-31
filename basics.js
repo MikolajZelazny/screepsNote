@@ -35,3 +35,24 @@ module.exports.loop = function () {
         }
     }
 }
+
+//SECOUND EXTENSION - zaangażowanie dwóch creepów(harvesterów) w cykl zbioru energii.
+// ( można by również skopiować) powyższy kod dla drugiego harvestera
+
+module.exports.loop = function () {
+    for(var name in Game.creeps) { // dla każdego creepa w grze
+        var creep = Game.creeps[name];
+
+        if(creep.store.getFreeCapacity() > 0) {
+            var sources = creep.room.find(FIND_SOURCES);
+            if(creep.harvest(sources[0]) == ERR_NOT_IN_RANGE) {
+                creep.moveTo(sources[0]);
+            }
+        }
+        else {
+            if(creep.transfer(Game.spawns['Spawn1'], RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
+                creep.moveTo(Game.spawns['Spawn1']);
+            }
+        }
+    }
+}
