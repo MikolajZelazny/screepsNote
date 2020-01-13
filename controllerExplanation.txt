@@ -1,0 +1,9 @@
+
+The Controller upgrade gives access to some new structures: walls, ramparts, and extensions. 
+We’ll discuss walls and ramparts in the next Tutorial section, for now let’s talk about extensions.
+
+Extensions are required to build larger creeps. A creep with only one body part of one type works poorly. 
+Giving it several WORKs will make him work proportionally faster.
+
+However, such a creep will be costly and a lone spawn can only contain 300 energy units. 
+To build creeps costing over 300 energy units you need spawn extensions.

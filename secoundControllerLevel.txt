@@ -1,0 +1,5 @@
+The second Controller level has 5 extensions available for you to build. 
+This number increases with each new level.
+
+You can place extensions at any spot in your room, and a spawn can use them regardless of the distance. 
+In this Tutorial we have already placed corresponding construction sites for your convenience.
